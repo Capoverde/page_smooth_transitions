@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #555555;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=/style.ff1c4cab.css.map */
