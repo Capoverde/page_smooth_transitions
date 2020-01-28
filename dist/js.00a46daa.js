@@ -117,9 +117,30 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/index.js":[function(require,module,exports) {
+})({"js/navBg.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.navchange = void 0;
+var nav = document.querySelector('.main__nav');
+var body = document.querySelector('body');
+
+var navchange = function navchange(e) {
+  // console.log(scrollTop)
+  window.pageYOffset > 50 ? nav.classList.add('navBg') : nav.classList.remove('navBg');
+};
+
+exports.navchange = navchange;
+},{}],"js/index.js":[function(require,module,exports) {
+"use strict";
+
+var _navBg = require("/js/navBg");
+
+// event listener:
+document.addEventListener('scroll', _navBg.navchange);
+},{"/js/navBg":"js/navBg.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
