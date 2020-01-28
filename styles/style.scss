@@ -6,6 +6,7 @@
 
 // variables:
 $body-bg: #555555;
+$link-c: #dddddd;
 
 body {
   background: $body-bg;
@@ -15,4 +16,37 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link-c;
+
+  &:hover {
+    transition: color 0.5s;
+    color: darken($link-c, 20);
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+// navigation:
+.main__nav {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+
+  &-list {
+    display: flex;
+    padding-right: 30px;
+
+    &-link {
+      margin: 20px;
+    }
+  }
 }

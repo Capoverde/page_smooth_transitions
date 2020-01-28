@@ -14,4 +14,31 @@ h1 {
   margin: 10px 0;
 }
 
+a {
+  text-decoration: none;
+  color: #dddddd;
+}
+a:hover {
+  transition: color 0.5s;
+  color: #aaaaaa;
+}
+
+ul li {
+  list-style: none;
+}
+
+.main__nav {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.main__nav-list {
+  display: flex;
+  padding-right: 30px;
+}
+.main__nav-list-link {
+  margin: 20px;
+}
+
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
