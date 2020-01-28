@@ -12,12 +12,6 @@ body {
   background: $body-bg;
 }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 10px 0;
-}
-
 a {
   text-decoration: none;
   color: $link-c;
@@ -34,6 +28,11 @@ ul {
   }
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 // navigation:
 .main__nav {
   width: 100%;
@@ -48,5 +47,18 @@ ul {
     &-link {
       margin: 20px;
     }
+  }
+}
+
+// header:
+.page__header {
+  width: 100%;
+  height: 30vh;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 5em;
   }
 }
