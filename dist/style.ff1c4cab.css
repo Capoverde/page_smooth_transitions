@@ -69,13 +69,42 @@ ul li {
   font-size: 5em;
 }
 
-section {
+.home,
+.about {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  position: absolute;
 }
-section p {
+.home .container .home-content,
+.home .container .about-content,
+.about .container .home-content,
+.about .container .about-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home .container .home-content img,
+.home .container .about-content img,
+.about .container .home-content img,
+.about .container .about-content img {
+  height: 50%;
+}
+.home .container .home-content .home-presentation p.text,
+.home .container .home-content .about-presentation p.text,
+.home .container .about-content .home-presentation p.text,
+.home .container .about-content .about-presentation p.text,
+.about .container .home-content .home-presentation p.text,
+.about .container .home-content .about-presentation p.text,
+.about .container .about-content .home-presentation p.text,
+.about .container .about-content .about-presentation p.text {
   margin: 30px 0;
   text-align: center;
+  color: black;
+}
+
+.about__body {
+  background: #074705;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
