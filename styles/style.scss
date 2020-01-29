@@ -11,6 +11,11 @@ $text-c: #eeeeee;
 // backgrounds:
 $body-bg: #555555;
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: $body-bg;
 }
